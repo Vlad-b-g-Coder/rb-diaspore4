@@ -21,22 +21,23 @@
       overflow: hidden;
     }
 
-    .profilePhoto {
-      width: 100%;
-      height: 100%;
-      display: flex;
-      justify-content: flex-start;  /* Выравнивание влево */
-      align-items: center;
-		      overflow: hidden; /* Отключаем прокрутку внутри блока */
+.profilePhoto {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Центрируем содержимое */
+  align-items: center;
+  overflow: hidden; /* Скрываем прокрутку */
+  padding: 10px; /* Добавляем отступы */
+  box-sizing: border-box;
+}
 
-    }
+.profilePhoto canvas {
+  width: 70% !important; /* Диаграмма занимает 70% ширины контейнера */
+  height: auto !important;
+  max-width: 800px; /* Ограничиваем максимальную ширину */
+  transform: scale(1.3); /* Масштабируем диаграмму */
+}
 
-    .profilePhoto canvas {
-      width: 600% !important;
-      height: auto !important;
-      max-width: 1900px;
-      transform: translateX(+25%) scale(1.5);
-    }
 
     .color-circles {
       display: flex;
