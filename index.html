@@ -38,6 +38,25 @@
   transform: scale(1.3); /* Масштабируем диаграмму */
 }
 
+/* Media query для уменьшения диаграммы на маленьких экранах */
+@media (max-width: 768px) {
+  .profilePhoto canvas {
+    width: 90% !important; /* Увеличиваем ширину на мобильных */
+    max-width: 600px; /* Ограничиваем максимальную ширину */
+    transform: scale(1); /* Сбрасываем масштаб */
+  }
+}
+
+/* Media query для уменьшения диаграммы на очень маленьких экранах */
+@media (max-width: 480px) {
+  .profilePhoto canvas {
+    width: 95% !important; /* Диаграмма будет занимать 95% ширины */
+    max-width: 500px; /* Ограничиваем максимальную ширину */
+    transform: scale(1); /* Убираем масштаб */
+  }
+}
+
+
 
     .color-circles {
       display: flex;
